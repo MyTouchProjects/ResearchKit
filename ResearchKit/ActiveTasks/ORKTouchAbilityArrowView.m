@@ -39,6 +39,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.style = ORKTouchAbilityArrowViewStyleFill;
+        self.clearsContextBeforeDrawing = YES;
         self.backgroundColor = [UIColor clearColor];
     }
     return self;
@@ -47,6 +48,7 @@
 - (instancetype)initWithFrame:(CGRect)frame style:(ORKTouchAbilityArrowViewStyle)style {
     if (self = [super initWithFrame:frame]) {
         self.style = style;
+        self.clearsContextBeforeDrawing = YES;
         self.backgroundColor = [UIColor clearColor];
     }
     return self;

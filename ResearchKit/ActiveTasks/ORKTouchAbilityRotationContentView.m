@@ -131,7 +131,7 @@
 
 - (void)tintColorDidChange {
     [super tintColorDidChange];
-    self.targetView.backgroundColor = self.tintColor;
+    self.targetView.tintColor = self.tintColor;
 }
 
 
